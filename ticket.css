@@ -1,0 +1,102 @@
+.box{
+    height: 500px;
+    width: 450px;
+    border: 2px ;
+    display: inline-block;
+    border-radius: 5%;
+    background-color:#49131b;
+    color: aliceblue;
+    margin-top: 4%;
+  
+    position: relative;
+    
+}
+.overview{
+    
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    }
+
+body{
+ background-color: black;
+   }
+
+.box .innerbox{
+    height: 450px;
+    width: 400px;
+    border: 2px ;
+    border-radius: 5%;
+    display: block;
+    background-color:white;
+    position: absolute;
+    top: 35%;   
+    left: 35%;
+    transform: translate(-40%, -40%); 
+    margin:5%;
+    margin-bottom:4%;
+    box-shadow: 3px 5px 3px 3px rgb(175, 157, 157); 
+    transition: 0.5s;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+   
+    background-size: 430px 350px;
+   
+
+ }
+ 
+ul
+{
+margin-top: 40%;
+font-size: 150%;
+height: 800px;
+width: 800px;
+
+}
+
+.box:hover .innerbox
+{
+   top:-100px;
+   scale: 0.80;
+   box-shadow: 0 15px 45px navy;
+   margin:0% 53% 0% 0%;
+   height: 250px;
+   background-size: 400px 300px;
+ }
+ 
+
+.box:hover
+{
+   top:130px;
+   height: 350px;
+   opacity: 1;
+
+}
+.text {
+
+   position:relative;
+   background:#49131b;
+   text-align: justify;
+   color: white;
+   display: none;   /* <----- hides text by default */
+   padding-right: 80%;
+   font-size: 17px;
+   
+}
+
+.box:hover .text
+ {
+   display: block;  /* <----- shows text on hover   */
+   height: 250px;
+   width: 30px;
+   top: 55px;
+
+}
+ .text.innerbox [style="background-image: url(/standard1.jpg)"]
+ {
+height: 250px;
+width: 30px;
+display: block;
+top: 55px;
+
+ }
